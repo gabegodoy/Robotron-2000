@@ -209,6 +209,10 @@ main {
     margin: 10px 0 0;
 }
 
+.mobile__warning{
+    display: none;
+}
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
@@ -229,5 +233,41 @@ main {
         width: 96vw;
         height: 80vh;
         margin: 10vh auto;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .box, .equipamentos{
+        display: none;
+    }
+
+    .robotron{
+        width: 100vw;
+        flex-basis: content;
+    }
+
+    .mobile__warning{
+        width: 50%;
+        text-align: end;
+        margin: 0 auto;
+        margin-left: 35%;
+        display: block;
+        font-size: 2rem;
+        
+    } 
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .robo{
+        margin-top: 50%;
+    }
+    
+    .mobile__warning{
+        text-align: center;
+        width: 70vw;
     }
 }
